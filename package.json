@@ -1,0 +1,24 @@
+{
+  "name": "psql-28",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install -D webpack-cli && npx webpack",
+    "start": "node index.js",
+    "prod": "node build/final.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "npx": "^10.2.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
