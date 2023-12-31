@@ -7,20 +7,20 @@ const port = 4000;
 // Database configuration
 const pool = new Pool({
   // developement
-  //   user: "postgres",
-  //   host: "localhost",
-  //   database: "landing_db",
-  //   password: "postgres",
-  //   port: 5432,
-
-  //   production
-  type: "postgres",
-  host: process.env.HOSTNAME,
+  user: "postgres",
+  host: "localhost",
+  database: "landing_db",
+  password: "postgres",
   port: 5432,
-  username: process.env.USERNAME,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE_NAME,
-  synchronize: true,
+
+  // production
+  // type: "postgres",
+  // host: process.env.HOSTNAME,
+  // port: 5432,
+  // username: process.env.USERNAME,
+  // password: process.env.PASSWORD,
+  // database: process.env.DATABASE_NAME,
+  // synchronize: true,
 });
 
 app.use(express.json());
